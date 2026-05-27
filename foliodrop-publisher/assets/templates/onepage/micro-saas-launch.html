@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Micro SaaS Launch Page</title>
+  <style>
+    :root { --ink:#151515; --muted:#655f56; --paper:#f6f0e6; --card:#fffaf2; --line:#151515; --accent:#ff6d3a; --mint:#95e6a8; --blue:#d7e4ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .container { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; font-weight: 900; }
+    nav { display: flex; gap: 8px; }
+    nav a, .cta { color: var(--ink); text-decoration: none; border: 2px solid var(--line); border-radius: 999px; padding: 10px 14px; background: var(--card); }
+    .hero { min-height: 78vh; display: grid; grid-template-columns: 1.05fr .95fr; gap: 44px; align-items: center; padding: 42px 0 56px; }
+    .kicker { font: 800 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; }
+    h1 { font-size: clamp(50px, 9vw, 118px); line-height: .85; margin: 16px 0 22px; letter-spacing: 0; max-width: 9ch; }
+    p { color: var(--muted); font-size: 20px; line-height: 1.4; margin: 0; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .primary { background: var(--ink); color: #fff; box-shadow: 5px 5px 0 var(--accent); }
+    .product { border: 2px solid var(--line); background: var(--card); box-shadow: 12px 12px 0 #111; border-radius: 22px; padding: 26px; }
+    .screen { aspect-ratio: 4 / 3; border: 2px solid var(--line); background: linear-gradient(135deg, var(--blue), #fff 58%, var(--mint)); border-radius: 16px; padding: 20px; display: grid; align-content: end; }
+    .screen div { background: #fff; border: 2px solid var(--line); border-radius: 14px; padding: 18px; font-weight: 900; }
+    section { padding: 54px 0; border-top: 2px solid var(--line); }
+    h2 { font-size: clamp(34px, 5vw, 64px); line-height: .95; margin: 0 0 24px; max-width: 12ch; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { border: 2px solid var(--line); background: var(--card); border-radius: 18px; padding: 22px; min-height: 180px; }
+    .card b { display: block; font-size: 24px; margin-bottom: 10px; }
+    .price { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: stretch; }
+    .price strong { font-size: 58px; line-height: 1; }
+    @media (max-width: 820px) { header, nav, .actions { align-items: flex-start; } header, .hero, .grid, .price { grid-template-columns: 1fr; } header { display: grid; gap: 14px; } .hero { min-height: auto; } nav { flex-wrap: wrap; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>Product Name</div>
+      <nav><a href="#workflow">Workflow</a><a href="#pricing">Pricing</a><a class="primary cta" href="https://example.com">Start</a></nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <div class="kicker">Micro SaaS Launch</div>
+          <h1>Replace with the literal offer.</h1>
+          <p>Say who it is for, what painful workflow it improves, and the concrete result they get after using it.</p>
+          <div class="actions"><a class="cta primary" href="https://example.com">Join the beta</a><a class="cta" href="#workflow">See how it works</a></div>
+        </div>
+        <div class="product">
+          <div class="screen"><div>Show the key workflow, output, or result here.</div></div>
+        </div>
+      </section>
+      <section id="workflow">
+        <h2>Three steps, no setup.</h2>
+        <div class="grid">
+          <div class="card"><b>1. Bring the input</b><p>Replace with the user's starting material.</p></div>
+          <div class="card"><b>2. Let the system shape it</b><p>Replace with the automated transformation.</p></div>
+          <div class="card"><b>3. Share the result</b><p>Replace with the finished output and how it is used.</p></div>
+        </div>
+      </section>
+      <section>
+        <h2>Built for a narrow job.</h2>
+        <div class="grid">
+          <div class="card"><b>Fast default</b><p>Explain the default that removes decisions.</p></div>
+          <div class="card"><b>Human control</b><p>Explain what the user can still review or edit.</p></div>
+          <div class="card"><b>Shareable output</b><p>Explain what the recipient gets.</p></div>
+        </div>
+      </section>
+      <section id="pricing" class="price">
+        <div><h2>Simple pricing.</h2><p>Replace with free, paid, beta, or waitlist terms.</p></div>
+        <div class="card"><strong>$0</strong><p>Replace with plan details and limits.</p><div class="actions"><a class="cta primary" href="https://example.com">Start now</a></div></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

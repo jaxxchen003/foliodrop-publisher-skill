@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">FolioDrop Publisher</title>
+  <desc id="desc">A stylized stack of published HTML pages</desc>
+  <rect width="512" height="512" rx="96" fill="#111111"/>
+  <path d="M128 148c0-24.3 19.7-44 44-44h168c24.3 0 44 19.7 44 44v216c0 24.3-19.7 44-44 44H172c-24.3 0-44-19.7-44-44V148z" fill="#f7f3ea"/>
+  <path d="M164 188h184M164 236h128M164 284h160" stroke="#111111" stroke-width="22" stroke-linecap="round"/>
+  <path d="M116 160l-22 18v208c0 34.2 27.8 62 62 62h176l22-28H156c-18.8 0-34-15.2-34-34V160h-6z" fill="#ff7a59"/>
+  <circle cx="342" cy="354" r="58" fill="#52d273"/>
+  <path d="M318 355l18 18 34-42" fill="none" stroke="#111111" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

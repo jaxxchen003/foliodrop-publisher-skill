@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Case Study</title>
+  <style>
+    :root { --ink:#161616; --muted:#686057; --paper:#f4eee3; --card:#fffaf2; --line:#161616; --accent:#d94b37; --green:#b7e7a3; --blue:#dbe7ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .container { width: min(1160px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 28px 0; display: flex; justify-content: space-between; gap: 18px; font-weight: 900; }
+    .hero { padding: 56px 0; display: grid; grid-template-columns: 1fr .82fr; gap: 36px; align-items: end; }
+    .kicker { color: var(--accent); font: 900 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; letter-spacing: .08em; }
+    h1 { font-size: clamp(50px, 8vw, 104px); line-height: .86; margin: 16px 0 24px; letter-spacing: 0; max-width: 10ch; }
+    h2 { font-size: clamp(34px, 5vw, 62px); line-height: .95; margin: 0 0 20px; }
+    h3 { font-size: 25px; margin: 0 0 8px; }
+    p { color: var(--muted); font-size: 19px; line-height: 1.45; margin: 0; }
+    .summary, .artifact, .note { border: 2px solid var(--line); background: var(--card); border-radius: 18px; padding: 24px; box-shadow: 8px 8px 0 #111; }
+    .summary dl { display: grid; gap: 14px; margin: 0; }
+    .summary dt { font-weight: 900; }
+    .summary dd { margin: 4px 0 0; color: var(--muted); }
+    section { padding: 54px 0; border-top: 2px solid var(--line); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .artifact { box-shadow: none; min-height: 260px; display: grid; gap: 18px; }
+    .frame { min-height: 150px; border: 2px solid var(--line); border-radius: 14px; background: linear-gradient(135deg, var(--blue), #fff 50%, var(--green)); }
+    .timeline { display: grid; gap: 16px; }
+    .row { display: grid; grid-template-columns: 160px 1fr; gap: 22px; padding: 18px 0; border-top: 1px solid #c9c0b4; }
+    .row b { color: var(--accent); }
+    @media (max-width: 820px) { header, .hero, .grid, .row { grid-template-columns: 1fr; } header { display: grid; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header><div>Designer Name</div><div>Case Study / Replace Category</div></header>
+    <main>
+      <section class="hero">
+        <div>
+          <div class="kicker">Portfolio Case Study</div>
+          <h1>Replace with the project title.</h1>
+          <p>Summarize the problem, audience, and outcome in two concrete sentences.</p>
+        </div>
+        <aside class="summary">
+          <dl>
+            <div><dt>Role</dt><dd>Product design, research, visual system</dd></div>
+            <div><dt>Timeline</dt><dd>Replace with timeframe</dd></div>
+            <div><dt>Outcome</dt><dd>Replace with measurable result or decision impact</dd></div>
+          </dl>
+        </aside>
+      </section>
+      <section>
+        <h2>Context and constraints.</h2>
+        <div class="grid">
+          <div class="note"><h3>Audience</h3><p>Who needed this, and what were they trying to do?</p></div>
+          <div class="note"><h3>Constraint</h3><p>What made the work hard: time, trust, data, platform, or behavior?</p></div>
+          <div class="note"><h3>Decision</h3><p>What tradeoff shaped the solution?</p></div>
+        </div>
+      </section>
+      <section>
+        <h2>Artifacts.</h2>
+        <div class="grid">
+          <article class="artifact"><div class="frame"></div><h3>Exploration</h3><p>Caption the thinking, not just the image.</p></article>
+          <article class="artifact"><div class="frame"></div><h3>System</h3><p>Show the reusable pattern or component logic.</p></article>
+          <article class="artifact"><div class="frame"></div><h3>Final</h3><p>Explain what shipped or what was approved.</p></article>
+        </div>
+      </section>
+      <section>
+        <h2>Process.</h2>
+        <div class="timeline">
+          <div class="row"><b>Discover</b><p>Replace with research or input synthesis.</p></div>
+          <div class="row"><b>Shape</b><p>Replace with prototypes, information architecture, or design direction.</p></div>
+          <div class="row"><b>Ship</b><p>Replace with final output and implementation handoff.</p></div>
+        </div>
+      </section>
+      <section>
+        <h2>Result.</h2>
+        <p>Close with what changed for users, the business, or the team. If numbers are unavailable, state the decision or learning the work enabled.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

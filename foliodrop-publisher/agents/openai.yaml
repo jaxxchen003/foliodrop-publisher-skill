@@ -1,0 +1,18 @@
+interface:
+  display_name: "FolioDrop Publisher"
+  short_description: "Create polished HTML works and publish share links"
+  icon_small: "./assets/foliodrop-publisher.svg"
+  icon_large: "./assets/foliodrop-publisher.svg"
+  brand_color: "#111111"
+  default_prompt: "Use $foliodrop-publisher to turn this idea into a polished single-file HTML work and publish it with FolioDrop."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "foliodrop"
+      description: "FolioDrop remote MCP server for publishing and managing HTML works"
+      transport: "streamable_http"
+      url: "https://foliodrop.app/mcp"
+
+policy:
+  allow_implicit_invocation: true

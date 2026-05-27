@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Launch Email Preview</title>
+  <style>
+    :root { --ink:#181818; --muted:#6b645a; --paper:#f5efe4; --card:#fffaf2; --line:#181818; --accent:#245ef4; --soft:#dfe7ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .wrap { width: min(920px, calc(100% - 28px)); margin: 28px auto; display: grid; grid-template-columns: 270px 1fr; gap: 20px; }
+    .meta, .email { border: 2px solid var(--line); background: var(--card); box-shadow: 8px 8px 0 #111; }
+    .meta { padding: 24px; align-self: start; }
+    .email { overflow: hidden; }
+    .bar { padding: 18px 24px; border-bottom: 2px solid var(--line); background: var(--soft); font: 800 14px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .content { padding: 34px; }
+    h1 { font-size: clamp(36px, 6vw, 68px); line-height: .92; margin: 0 0 18px; letter-spacing: 0; }
+    h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .08em; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; margin: 0 0 12px; }
+    p { color: var(--muted); font-size: 18px; line-height: 1.45; margin: 0 0 18px; }
+    .subject { font-size: 19px; color: var(--ink); font-weight: 900; margin-bottom: 10px; }
+    .preview { color: var(--muted); margin-bottom: 24px; }
+    .button { display: inline-block; background: var(--accent); color: #fff; border: 2px solid #111; box-shadow: 4px 4px 0 #111; border-radius: 999px; padding: 14px 18px; font-weight: 900; text-decoration: none; }
+    .box { border: 2px solid var(--line); padding: 18px; background: #fff; margin: 22px 0; }
+    .footer { border-top: 2px solid var(--line); padding: 20px 34px; color: var(--muted); font-size: 14px; }
+    dl { display: grid; gap: 14px; margin: 0; }
+    dt { font-weight: 900; }
+    dd { margin: 4px 0 0; color: var(--muted); }
+    @media (max-width: 760px) { .wrap { grid-template-columns: 1fr; } .content { padding: 26px; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <aside class="meta">
+      <h2>Campaign Brief</h2>
+      <dl>
+        <div><dt>Audience</dt><dd>Replace with one narrow segment.</dd></div>
+        <div><dt>Offer</dt><dd>Replace with the launch promise.</dd></div>
+        <div><dt>Action</dt><dd>Replace with the one click you want.</dd></div>
+      </dl>
+    </aside>
+    <article class="email">
+      <div class="bar">Email preview</div>
+      <div class="content">
+        <p class="subject">Subject: Replace with a concrete launch hook</p>
+        <p class="preview">Preview text: one sentence that adds context without repeating the subject.</p>
+        <h1>Product name now turns the hard part into one step.</h1>
+        <p>Open with the user's current pain, then state the new behavior. Keep the message specific enough that it could only belong to this product.</p>
+        <div class="box">
+          <p><strong>What changed:</strong> replace with a short feature or workflow summary.</p>
+          <p><strong>Who it helps:</strong> replace with a precise audience.</p>
+          <p><strong>Why now:</strong> replace with timing, beta, launch, or limited offer.</p>
+        </div>
+        <p><a class="button" href="https://example.com">Try the launch</a></p>
+      </div>
+      <footer class="footer">Company name, short address or footer note. You are receiving this because you asked for updates.</footer>
+    </article>
+  </main>
+</body>
+</html>

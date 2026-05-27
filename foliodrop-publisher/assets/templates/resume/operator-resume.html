@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Operator Resume</title>
+  <style>
+    :root { --ink:#171717; --muted:#66615a; --paper:#f7f3ea; --card:#fffaf2; --line:#171717; --accent:#1d7f64; --warm:#ff7a4f; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { width: min(1120px, calc(100% - 32px)); margin: 32px auto; display: grid; grid-template-columns: .78fr 1.22fr; border: 2px solid var(--line); background: var(--card); box-shadow: 12px 12px 0 #111; }
+    aside { padding: 34px; border-right: 2px solid var(--line); background: #e7f2df; }
+    section { padding: 34px; }
+    h1 { font-size: clamp(42px, 7vw, 82px); line-height: .88; margin: 0 0 18px; letter-spacing: 0; }
+    h2 { font-size: 18px; margin: 0 0 18px; text-transform: uppercase; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .08em; }
+    h3 { font-size: 25px; margin: 0 0 6px; }
+    p { color: var(--muted); line-height: 1.45; font-size: 17px; margin: 0; }
+    .role { font-size: 24px; color: var(--ink); font-weight: 800; margin-bottom: 24px; }
+    .contact, .chips, .stack { display: grid; gap: 12px; }
+    .contact a, .chip { color: var(--ink); text-decoration: none; border: 2px solid var(--line); border-radius: 999px; padding: 10px 13px; background: #fffaf2; font-weight: 800; }
+    .block { padding: 28px 0; border-bottom: 2px solid var(--line); }
+    .block:last-child { border-bottom: 0; }
+    .item { display: grid; grid-template-columns: 150px 1fr; gap: 22px; padding: 18px 0; border-top: 1px solid #cbc3b6; }
+    .time { font-weight: 900; color: var(--accent); }
+    .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 22px; }
+    .metric { border: 2px solid var(--line); padding: 16px; background: #fff; }
+    .metric strong { display: block; font-size: 30px; line-height: 1; }
+    @media (max-width: 760px) { main { grid-template-columns: 1fr; margin: 16px auto; box-shadow: 7px 7px 0 #111; } aside { border-right: 0; border-bottom: 2px solid var(--line); } .item, .metrics { grid-template-columns: 1fr; } }
+    @media print { body { background: #fff; } main { width: 100%; margin: 0; box-shadow: none; border: 0; } aside { background: #f2f7ed; } }
+  </style>
+</head>
+<body>
+  <main>
+    <aside>
+      <h1>Your Name</h1>
+      <p class="role">Operator / Product Builder</p>
+      <div class="contact">
+        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="https://example.com">example.com</a>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+      </div>
+      <div class="block">
+        <h2>Profile</h2>
+        <p>Replace with a sharp two-sentence summary: domain, strengths, and the kind of outcome you repeatedly create.</p>
+      </div>
+      <div class="block">
+        <h2>Strengths</h2>
+        <div class="chips">
+          <span class="chip">Product strategy</span>
+          <span class="chip">Growth systems</span>
+          <span class="chip">AI workflows</span>
+          <span class="chip">Launch execution</span>
+        </div>
+      </div>
+    </aside>
+    <section>
+      <div class="block">
+        <h2>Evidence</h2>
+        <div class="metrics">
+          <div class="metric"><strong>3x</strong><p>Replace with growth or efficiency result.</p></div>
+          <div class="metric"><strong>12</strong><p>Replace with shipped products or launches.</p></div>
+          <div class="metric"><strong>0-1</strong><p>Replace with a credible operating range.</p></div>
+        </div>
+      </div>
+      <div class="block">
+        <h2>Experience</h2>
+        <div class="item">
+          <div class="time">2024 - Now</div>
+          <div><h3>Company or Project</h3><p>Outcome-first description with metrics, scope, and your role. Avoid generic responsibility lists.</p></div>
+        </div>
+        <div class="item">
+          <div class="time">2021 - 2024</div>
+          <div><h3>Previous Role</h3><p>Describe a shipped result, the constraint, and what changed for users or the business.</p></div>
+        </div>
+      </div>
+      <div class="block">
+        <h2>Selected Work</h2>
+        <div class="stack">
+          <p><strong>Project Name:</strong> one-line context plus concrete result.</p>
+          <p><strong>Project Name:</strong> one-line context plus concrete result.</p>
+          <p><strong>Project Name:</strong> one-line context plus concrete result.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
