@@ -50,7 +50,7 @@ foliodrop-publisher/
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo chrischen003/foliodrop-publisher-skill \
+  --repo jaxxchen003/foliodrop-publisher-skill \
   --path foliodrop-publisher \
   --name foliodrop-publisher \
   --method git
@@ -172,7 +172,7 @@ If you use the local Codex skill installer, install from GitHub:
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo chrischen003/foliodrop-publisher-skill \
+  --repo jaxxchen003/foliodrop-publisher-skill \
   --path foliodrop-publisher \
   --name foliodrop-publisher \
   --method git
